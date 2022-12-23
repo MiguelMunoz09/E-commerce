@@ -1,0 +1,18 @@
+//Esto es para agregar rutas a nuestro proyecto
+
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "paths": {
+            "@pages/*":["pages/*"],
+            "@components/*": ["components/*"],
+            "@containers/*": ["containers/*"],
+            "@icons/*":["asset/icons/"],
+            "@logos/*":["asset/logos/*"],
+            "@context/*":["context/*"],
+            "@styles/*":["styles/*"]
+
+        }
+    }
+}
+
