@@ -1,8 +1,8 @@
 
 import React, {useContext } from "react";
-import addToCartimage from '@icons/bt_add_to_cart.svg';
+import addToCartimage from '../asset/icons/bt_add_to_cart.svg';
 import AppContext from '../context/AppContext';
-import '@styles/ProductInfo.scss';
+import '../styles/ProductInfo.scss';
 
 
 //aqui es donde debemos desarrollar la logica, para que se muestre el mismo contenido en los detalles del producto.
