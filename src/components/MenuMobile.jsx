@@ -1,9 +1,10 @@
 import React from 'react';
 import '../styles/MenuMobile.scss';
 
+
 const MobileMenu = () => {
     return (
-        <div class="mobile-menu">
+        <div className="mobile-menu">
             <ul>
                 <li>
                     <p>CATEGORIES</p>

@@ -8,7 +8,7 @@
 	bottom: 0;
 	left: 0;
 	background-color: #ffffff;
-	border: 1px solid var(--very-light-pink);
+	border: 1px solid $--very-light-pink;
 	border-radius: 6px;
 	animation: swipeDown 0.26s ease;
    
@@ -35,8 +35,8 @@
     font-weight: 300 !important;
 }
 .sign-out {
-    font-size: var(--sm);
-    color: var(--hospital-green) !important;
+    font-size: $--sm;
+    color: $--hospital-green !important;
 }
 @keyframes swipeDown {
 	0% {

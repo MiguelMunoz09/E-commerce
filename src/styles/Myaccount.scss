@@ -19,7 +19,7 @@
   }
 
   .title-MyAccount {
-    font-size: var(--lg);
+    font-size: $--lg;
     margin-bottom: 30px;
     text-align: start;
 }
@@ -30,25 +30,25 @@
   }
   
   .label-MyAccount {
-    font-size: var(--sm);
+    font-size: $--sm;
     font-weight: bold;
     margin-bottom: 4px;
   }
 
   .value-Myaccount{
     color: #C7C7C7;
-    font-size: var(--md);
+    font-size: $--md;
     margin: 8px 0 32px 0;
   }
 
   .secondary-button-MyAccount {
-    background-color: var(--white);
+    background-color: $--white;
     border-radius: 8px;
-    border: 1px solid var(--hospital-green);
-    color: var(--hospital-green);
+    border: 1px solid $--hospital-green;
+    color: $--hospital-green;
     width: 100%;
     cursor: pointer;
-    font-size: var(--md);
+    font-size: $--md;
     font-weight: bold;
     height: 50px;
   }

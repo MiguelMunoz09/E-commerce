@@ -3,28 +3,13 @@
 
 
 //se pueden anadir, cosas tan importantes como agregar rutas, ejemplo en el script async
-const { redirect } = require('next/dist/server/api-utils')
+// const { redirect } = require('next/dist/server/api-utils')
 
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  reactStrictMode: true,
+  /* config options here */
 }
 
-module.exports = {
-  nextConfig
-  // env: {
-  //   customKey: 'customValue',
-  // },
-  // // basePath: '/dist',
-  // compress: true,
-  // async redirect () {
-  //   return [
-  //     {
-  //     source: '/hola',
-  //     destination: '/hi',
-  //     permanent: true,
-  //   }
-  //   ]
-    
-  // }
-}
+module.exports = nextConfig
