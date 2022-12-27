@@ -3,7 +3,7 @@ import OrderItem from '../components/OrderItem';
 import AppContext from '../context/AppContext';
 import arrow from '../asset/icons/flechita.svg';
 import ProductInfo  from '../components/ProductInfo';
-import styles from '@styles/MyOrder.module.scss';
+import styles from '../styles/MyOrder.module.scss';
 //pasar como parametro toggleOrders, setToggleOrders es lo que nos permite importar la funcion del header.
 
 const MyOrder = ({toggleOrders, setToggleOrders}) => {

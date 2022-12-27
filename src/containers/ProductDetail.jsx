@@ -2,7 +2,7 @@ import React, {useState, useContext} from 'react';
 import ProductInfo from '../components/ProductInfo';
 import AppContext from '../context/AppContext';
 import '../styles/ProductDetail.scss';
-import back from "@icons/icon_close.png";
+import back from "../asset/icons/icon_close.png";
 
 //va dentro de handle bars 
 

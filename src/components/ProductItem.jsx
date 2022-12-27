@@ -3,10 +3,10 @@
 //aqui es de donde nos tenemos que basar para mejorar este bug, aqui y en productlist
 
 import React, { useContext, useState } from "react";
-import "@styles/ProductItem.scss";
+import "../styles/ProductItem.scss";
 import  AppContext  from "../context/AppContext";
-import bt_add_to_cart from "@icons/bt_add_to_cart.svg";
-import added_to_cart from "@icons/bt_added_to_cart.svg";
+import bt_add_to_cart from "../asset/icons/icons/bt_add_to_cart.svg";
+import added_to_cart from "../asset/icons/bt_added_to_cart.svg";
 import ProductDetail from "../containers/ProductDetail"
 
 export const ProductItem = ({ product }) => {
