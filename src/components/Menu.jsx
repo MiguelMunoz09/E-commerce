@@ -6,7 +6,7 @@ const Menu = () => {
 		<div className={styles.Menu}>
 			<ul>
 				<li>
-					<a href="" className="title">My orders</a>
+					<a href="" className={style.title}>My orders</a>
 				</li>
 				<li>
 					<a href="http://localhost:443/account">My account</a>

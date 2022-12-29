@@ -3,11 +3,13 @@
 //aqui es de donde nos tenemos que basar para mejorar este bug, aqui y en productlist
 
 import React, { useContext, useState } from "react";
-import "../styles/ProductItem.scss";
+import Image from "next/image";
 import  AppContext  from "../context/AppContext";
-import bt_add_to_cart from "../asset/icons/icons/bt_add_to_cart.svg";
+import bt_add_to_cart from "../asset/icons/bt_add_to_cart.svg";
 import added_to_cart from "../asset/icons/bt_added_to_cart.svg";
 import ProductDetail from "../containers/ProductDetail"
+import "../styles/ProductItem.module.scss";
+
 
 export const ProductItem = ({ product }) => {
   const { addToCart, removeFromCart, state } = useContext(AppContext);
@@ -22,9 +24,9 @@ export const ProductItem = ({ product }) => {
     state.cart.some((item) => item.id === product.id) ? true : false;
 
   return (
-    <div className="ProductItem">
+    <div className={styles.ProductItem}>
 
-      <img
+      <Image
       
         src={product.images.length !== 0 ? product.images[0] :empty }
         alt={product.title}
@@ -32,7 +34,7 @@ export const ProductItem = ({ product }) => {
         
       />
       
-      <div className="product-info">
+      <div className={styles[product-info]}>
        
         <div>
           <p>${product.price}</p>
@@ -43,9 +45,9 @@ export const ProductItem = ({ product }) => {
         <figure onClick={() => handleClick(product)}>
           
           {itsProductAdded() ? (
-            <img src={added_to_cart} alt="" />
+            <Image src={added_to_cart} alt="" />
           ) : (
-            <img src={bt_add_to_cart} alt="" />
+            <Image src={bt_add_to_cart} alt="" />
           )}
           {toggleProductDetail && <ProductDetail toggleProductDetail = {toggleProductDetail} setProductDetail = {setProductDetail}/>}
         </figure>
