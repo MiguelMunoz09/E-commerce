@@ -1,18 +1,28 @@
+import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/Menu.module.scss';
 
-const Menu = () => {
+const Menu = ({handleToggle}) => {
 	return (
 		<div className={styles.Menu}>
 			<ul>
 				<li>
-					<a href="" className={style.title}>My orders</a>
+					<Link href="/Orders" className={styles.title} onClick={handleToggle}>
+					  My orders
+					</Link>
+					
 				</li>
 				<li>
-					<a href="http://localhost:443/account">My account</a>
+					<Link href=" /MyAccount" onClick={handleToggle}>
+					My account
+					</Link>
+					
 				</li>
 				<li>
-					<a href="/"> Sign out</a>
+					<Link href="/Login" onClick={handleToggle}>
+					Sign out
+					</Link>
+					
 				</li>
 			</ul>
 		</div>

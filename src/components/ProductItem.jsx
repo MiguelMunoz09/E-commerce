@@ -4,11 +4,11 @@
 
 import React, { useContext, useState } from "react";
 import Image from "next/image";
-import  AppContext  from "../context/AppContext";
+import AppContext  from "../context/AppContext";
 import bt_add_to_cart from "../asset/icons/bt_add_to_cart.svg";
 import added_to_cart from "../asset/icons/bt_added_to_cart.svg";
 import ProductDetail from "../containers/ProductDetail"
-import "../styles/ProductItem.module.scss";
+import styles from "../styles/ProductItem.module.scss";
 
 
 export const ProductItem = ({ product }) => {
@@ -27,14 +27,16 @@ export const ProductItem = ({ product }) => {
     <div className={styles.ProductItem}>
 
       <Image
-      
-        src={product.images.length !== 0 ? product.images[0] :empty }
+        loader={() => product.images[0]}
+        src={product.images[0]}
         alt={product.title}
+        width={100}
+        height={100}
         onClick={() => setProductDetail(!toggleProductDetail)}
         
       />
       
-      <div className={styles[product-info]}>
+      <div className={styles["product-info"]}>
        
         <div>
           <p>${product.price}</p>
@@ -45,11 +47,11 @@ export const ProductItem = ({ product }) => {
         <figure onClick={() => handleClick(product)}>
           
           {itsProductAdded() ? (
-            <Image src={added_to_cart} alt="" />
+            <Image src={added_to_cart} alt="" width={250} height={250}/>
           ) : (
-            <Image src={bt_add_to_cart} alt="" />
+            <Image src={bt_add_to_cart} alt="" width={250} height={250} />
           )}
-          {toggleProductDetail && <ProductDetail toggleProductDetail = {toggleProductDetail} setProductDetail = {setProductDetail}/>}
+          {toggleProductDetail && <ProductDetail toggleProductDetail = {toggleProductDetail} setProductDetail = {setProductDetail} product={product} key={product.id}/>}
         </figure>
 
       </div>

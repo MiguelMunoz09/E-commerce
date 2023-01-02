@@ -8,7 +8,7 @@ import AppContext from '../context/AppContext';
 import shoppingCart from '../asset/icons/icon_shopping_cart.svg';
 import MenuMobile from "../components/MenuMobile"
 import styles from '../styles/Header.module.scss';
-
+import Link from "next/link";
 
 const Header = () => {
 	const [toggle, setToggle] = useState(false);
@@ -17,7 +17,6 @@ const Header = () => {
 
 	const { state } = useContext(AppContext);
 	
-
 
 	const handleToggle = () => {
 		setToggle(!toggle);
@@ -31,31 +30,51 @@ const Header = () => {
 		<nav className={styles.nav}>
 			 <Image src={menu} alt="menu" className={styles.menu}  onClick={() => setToggleMenuMobile(!toggleMenuMobile)} /> 
 			<div className={styles["navbar-left"]}>
+				<Link href="/">
 				<Image src={logo} alt="logo" className={styles["nav-logo"]}  />
+				</Link>
 				<ul>
+					
 					<li>
-						<a href="/">All</a>
+					<Link href=" "> All </Link>
+					</li>
+					
+					<li>
+						<Link href=" ">
+						Clothes
+						</Link>
+						
 					</li>
 					<li>
-						<a href="/">Clothes</a>
+						<Link href=" ">
+						Electronics
+						</Link>
+						
 					</li>
 					<li>
-						<a href="/">Electronics</a>
+						<Link href=" ">
+						Furnitures
+						</Link>
+						
 					</li>
 					<li>
-						<a href="/">Furnitures</a>
+						<Link href=" ">
+						Toys
+						</Link>
+						
 					</li>
 					<li>
-						<a href="/">Toys</a>
+						<Link href=" ">
+						Others
+						</Link>
+						
 					</li>
-					<li>
-						<a href="/">Others</a>
-					</li>
+			
 				</ul>
 			</div>
 			<div className={styles["navbar-right"]}>
 				<ul>
-					<li className={styles["navbar-email"]} onClick={handleToggle}>
+					<li className={styles["navbar-email"]} onClick={handleToggle} >
 						Thewintherdmc@gmail.com
 					</li>
 					<li
@@ -69,7 +88,7 @@ const Header = () => {
 				
 				{toggleOrders && <MyOrder toggleOrders={toggleOrders} setToggleOrders={setToggleOrders} />}
 			</div>
-			{toggle && <Menu />}
+			{toggle && <Menu  handleToggle={handleToggle}/>}
 			{toggleMenuMobile && <MenuMobile handleToggleMenuMobile={handleToggleMenuMobile} />}
 		</nav>
 	);

@@ -15,6 +15,8 @@
 }
 .nav-logo {
   width: 100px;
+  margin-top: 19px;
+  margin-right: 12px;
 }
 .navbar-left ul,
 .navbar-right ul {
@@ -48,9 +50,11 @@
   color: $--very-light-pink;
   font-size: $--sm;
   margin-right: 12px;
+  cursor: pointer;
 }
 .navbar-shopping-cart {
   position: relative;
+  cursor: pointer;
 }
 .navbar-shopping-cart div {
   width: 16px;
@@ -69,6 +73,7 @@
 @media (max-width: 640px) {
   .menu {
     display: block;
+    margin-top: 19px;
   }
   .navbar-left ul {
     display: none;

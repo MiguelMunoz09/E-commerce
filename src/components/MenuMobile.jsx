@@ -1,46 +1,73 @@
+import Link from 'next/link';
 import React from 'react';
-import '../styles/MenuMobile.module.scss';
+import styles from '../styles/MenuMobile.module.scss';
 
 
 const MobileMenu = () => {
     return (
-        <div className="mobile-menu">
+        <div className={styles["mobile-menu"]}>
             <ul>
                 <li>
                     <p>CATEGORIES</p>
                 </li>
                 <li>
-                    <a href="/">All</a>
+                    <Link href="/">
+                     All
+                    </Link>
+                   
                 </li>
                 <li>
-                    <a href="/">Clothes</a>
+                    <Link href="/">
+                    Clothes
+                    </Link>
+                    
                 </li>
                 <li>
-                    <a href="/">Electronics</a>
+                    <Link href="/">
+                    Electronics
+                    </Link>
+                    
                 </li>
                 <li>
-                    <a href="/">Furnitures</a>
+                    <Link href="/">
+                    Furnitures
+                    </Link>
                 </li>
                 <li>
-                    <a href="/">Toys</a>
+                    <Link href="/">
+                    Toys
+                    </Link>
+                    
                 </li>
                 <li>
-                    <a href="/">Other</a>
+                    <Link href="">
+                    Other
+                    </Link>
+                    
                 </li>
                 </ul>
 
                 <ul>
                 <li>
-                    <a href="/account">My account</a>
+                    <Link href="/MyAccount">
+                    My account
+                    </Link>
+                    
                 </li>
                 </ul>
 
                 <ul>
                 <li>
-                    <a href="/account" class="email">thewintherdmc@gmail.com</a>
+                    <Link href="/" className={styles.email}>
+                     thewintherdmc@gmail.com
+                    </Link>
+                    
                 </li>
                 <li>
-                    <a href="/signup" class="sign-out">Sign out</a>
+                    <Link href="/Login" className={styles["sign-out"]}>
+                     Sign out
+                    </Link>
+                   
                 </li>
             </ul>
         </div>

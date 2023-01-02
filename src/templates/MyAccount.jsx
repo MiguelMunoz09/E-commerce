@@ -1,26 +1,29 @@
 import React from 'react';
-import '../styles/Myaccount.scss';
-import Yardsale from '@logos/logo_yard_sale.svg';
+import Yardsale from '../asset/logos/logo_yard_sale.svg';
+import styles from '../styles/Myaccount.module.scss';
+import Image from "next/image";
+import Link from 'next/link';
+
 
 const MyAccount = () => {
 	return (
 
-		<div className="login-MyAccount">
-        <div className="form-MyAccount">
-          <img src={Yardsale} alt="logo" className="logo-MyAccount"/>
+		<div className={styles["login-MyAccount"]}>
+        <div className={styles["form-MyAccount"]}>
+          <Image src={Yardsale} alt="logo" className={styles["logo-MyAccount"]}/>
           
-          <h1 className="title-MyAccount"> My account </h1>  
+          <h1 className={styles["title-MyAccount"]}> My account </h1>  
 
-          <form action="/" className="form-MyAccount">
-            <label for="email" className="label-MyAccount">Name</label>
-            <p className="value-Myaccount"> Miguel angel Muñoz </p>
+          <form action="/" className={styles["form-MyAccount"]}>
+            <label for="email" className={styles["label-MyAccount"]}>Name</label>
+            <p className={styles["value-Myaccount"]}> Miguel angel Muñoz </p>
 
-            <label for="password" className="label-MyAccount">Email adress</label>
-            <p className="value-Myaccount"> Thewintherdmc@gmail.com</p>
+            <label for="password" className={styles["label-MyAccount"]}>Email adress</label>
+            <p className={styles["value-Myaccount"]}> Thewintherdmc@gmail.com</p>
 
-            <label for="password" className="label-MyAccount">Password</label>
-            <p className="value-Myaccount">*********</p>
-            <input type="submit" value="Edit" className="secondary-button-MyAccount login-button-MyAccount"/>
+            <label for="password" className={styles["label-MyAccount"]}>Password</label>
+            <p className={styles["value-Myaccount"]}>*********</p>
+            <input type="submit" value="Edit" className={styles["secondary-button-MyAccount login-button-MyAccount"]}/>
            
           </form>
     
