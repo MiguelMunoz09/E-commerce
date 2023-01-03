@@ -9,9 +9,9 @@
 	left: 0;
 	background-color: #ffffff;
 	border: 1px solid  #C7C7C7;
-	
 	animation: swipeDown 0.26s ease;
-    cursor:pointer
+    cursor:pointer;
+	z-index: auto;
 }
 
 .mobile-menu a:hover{

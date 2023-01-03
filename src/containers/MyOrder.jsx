@@ -22,27 +22,29 @@ const MyOrder = ({toggleOrders, setToggleOrders}) => {
 		
 	
 	return (
-		<aside className={styles.MyOrder}>
-			<div className={styles["title-container"]}>
+		<aside className={styles["shopping-cart-container"]}>
+			<div className={styles["title-container-shopping-cart"]}>
 				<Image src={arrow} alt="arrow" onClick={() => setToggleOrders(!toggleOrders)}/>
 				
-				<p className={styles.title}>My order</p>
+				<p className={styles["title-shopping-cart"]}>My order</p>
 			</div>
-			<div className={styles["my-order-content"]}>
+			<div className={styles["articulos-container"]}>
 				{state.cart.map(product => (
 					<OrderItem product={product} key={`orderItem-${product.id}`} />
 					
 				))}
 				
-				<div className={styles.order}>
+				<div className={styles["my-order-content"]}>
 					<p>
 						<span>Total</span>
 					</p>
 					<p>$ {sumTotal()}</p>
 				</div>
-				<Link className={styles["primary-button"]} href= "/checkout" onClick={() => setToggleOrders(!toggleOrders)}>
-					Checkout
-				</Link>
+				<Link href="/checkout">
+                <button disabled={state.cart.length == 0? true:false} className={styles["primary_btn"]} onClick={() => setToggleOrders(!toggleOrders)}>
+                    <span>Checkout</span>
+                </button>
+            </Link>
 			</div>
 			
 		</aside>

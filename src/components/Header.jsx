@@ -28,7 +28,10 @@ const Header = () => {
 
 	return (
 		<nav className={styles.nav}>
-			 <Image src={menu} alt="menu" className={styles.menu}  onClick={() => setToggleMenuMobile(!toggleMenuMobile)} /> 
+			<Link href={"/"}>
+			<Image src={menu} alt="menu" className={styles.menu}  onClick={() => setToggleMenuMobile(!toggleMenuMobile)} /> 
+			</Link>
+			 
 			<div className={styles["navbar-left"]}>
 				<Link href="/">
 				<Image src={logo} alt="logo" className={styles["nav-logo"]}  />
@@ -36,29 +39,29 @@ const Header = () => {
 				<ul>
 					
 					<li>
-					<Link href=" "> All </Link>
+					<Link href="/"> All </Link>
 					</li>
 					
 					<li>
-						<Link href=" ">
+						<Link href="/">
 						Clothes
 						</Link>
 						
 					</li>
 					<li>
-						<Link href=" ">
+						<Link href="/">
 						Electronics
 						</Link>
 						
 					</li>
 					<li>
-						<Link href=" ">
+						<Link href="/">
 						Furnitures
 						</Link>
 						
 					</li>
 					<li>
-						<Link href=" ">
+						<Link href="/">
 						Toys
 						</Link>
 						

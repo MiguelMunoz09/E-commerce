@@ -17,6 +17,8 @@
   width: 100px;
   margin-top: 19px;
   margin-right: 12px;
+  position: absolute;
+  left: 10px;
 }
 .navbar-left ul,
 .navbar-right ul {
@@ -26,6 +28,7 @@
   display: flex;
   align-items: center;
   height: 60px;
+  
 }
 .navbar-left {
   display: flex;
@@ -40,6 +43,7 @@
   border: 1px solid $--white;
   padding: 8px;
   border-radius: 8px;
+  margin-left: 40px;
 }
 .navbar-left ul li a:hover,
 .navbar-right ul li a:hover {
@@ -51,10 +55,13 @@
   font-size: $--sm;
   margin-right: 12px;
   cursor: pointer;
+  
 }
 .navbar-shopping-cart {
   position: relative;
   cursor: pointer;
+  margin-top: 4px;
+ 
 }
 .navbar-shopping-cart div {
   width: 16px;
@@ -74,6 +81,8 @@
   .menu {
     display: block;
     margin-top: 19px;
+    position: absolute;
+    left: 10px;
   }
   .navbar-left ul {
     display: none;
@@ -81,4 +90,9 @@
   .navbar-email {
     display: none;
   }
+.nav-logo{
+  position: relative;
+  text-align: center;
+}
+
 }

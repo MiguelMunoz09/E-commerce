@@ -3,7 +3,7 @@ import React from 'react';
 import styles from '../styles/MenuMobile.module.scss';
 
 
-const MobileMenu = () => {
+const MobileMenu = ({handleToggleMenuMobile}) => {
     return (
         <div className={styles["mobile-menu"]}>
             <ul>
@@ -11,36 +11,36 @@ const MobileMenu = () => {
                     <p>CATEGORIES</p>
                 </li>
                 <li>
-                    <Link href="/">
+                    <Link href="/" onClick={handleToggleMenuMobile}>
                      All
                     </Link>
                    
                 </li>
                 <li>
-                    <Link href="/">
+                    <Link href="/" onClick={handleToggleMenuMobile}>
                     Clothes
                     </Link>
                     
                 </li>
                 <li>
-                    <Link href="/">
+                    <Link href="/" onClick={handleToggleMenuMobile}>
                     Electronics
                     </Link>
                     
                 </li>
                 <li>
-                    <Link href="/">
+                    <Link href="/" onClick={handleToggleMenuMobile}>
                     Furnitures
                     </Link>
                 </li>
                 <li>
-                    <Link href="/">
+                    <Link href="/" onClick={handleToggleMenuMobile}>
                     Toys
                     </Link>
                     
                 </li>
                 <li>
-                    <Link href="">
+                    <Link href="" onClick={handleToggleMenuMobile}>
                     Other
                     </Link>
                     
@@ -49,7 +49,7 @@ const MobileMenu = () => {
 
                 <ul>
                 <li>
-                    <Link href="/MyAccount">
+                    <Link href="/MyAccount" onClick={handleToggleMenuMobile}>
                     My account
                     </Link>
                     
@@ -64,7 +64,7 @@ const MobileMenu = () => {
                     
                 </li>
                 <li>
-                    <Link href="/Login" className={styles["sign-out"]}>
+                    <Link href="/Login" className={styles["sign-out"]} onClick={handleToggleMenuMobile}>
                      Sign out
                     </Link>
                    

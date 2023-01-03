@@ -2,7 +2,7 @@ import React from 'react';
 import Yardsale from '../asset/logos/logo_yard_sale.svg';
 import styles from '../styles/Myaccount.module.scss';
 import Image from "next/image";
-
+import Link from 'next/link';
 
 
 const MyAccount = () => {
@@ -23,6 +23,7 @@ const MyAccount = () => {
 
             <label for="password" className={styles["label-MyAccount"]}>Password</label>
             <p className={styles["value-Myaccount"]}>*********</p>
+          
             <input type="submit" value="Edit" className={styles["secondary-button-MyAccount"] + " " + styles["login-button-MyAccount"]}/>
            
           </form>
