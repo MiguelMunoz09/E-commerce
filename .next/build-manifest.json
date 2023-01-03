@@ -20,10 +20,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
-    "/MyAccount": [
+    "/Login": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/MyAccount.js"
+      "static/chunks/pages/Login.js"
     ],
     "/Orders": [
       "static/chunks/webpack.js",
