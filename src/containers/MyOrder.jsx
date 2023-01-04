@@ -41,7 +41,7 @@ const MyOrder = ({toggleOrders, setToggleOrders}) => {
 					<p>$ {sumTotal()}</p>
 				</div>
 				<Link href="/checkout">
-                <button disabled={state.cart.length == 0? true:false} className={styles["primary_btn"]} onClick={() => setToggleOrders(!toggleOrders)}>
+                <button  className={styles["primary_btn"]} onClick={() => setToggleOrders(!toggleOrders)}>
                     <span>Checkout</span>
                 </button>
             </Link>

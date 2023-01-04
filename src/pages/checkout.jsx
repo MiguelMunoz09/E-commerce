@@ -8,6 +8,11 @@ import Link from 'next/link';
 const Checkout = () => {
 	const {state}= useContext(AppContext)
 
+	const sumTotal = () => {
+		const reducer = (accumator, currentValue) => accumator + currentValue.price;
+		const sum = state.cart.reduce(reducer,0)
+		return sum;
+	}
 
 	return (
 		<>
@@ -24,7 +29,7 @@ const Checkout = () => {
 							<span>3.01.2023</span>
 							<span>articles</span>
 						</p>
-						<p>$560.00</p>
+						<p>{sumTotal()}</p>
 					</div>
 					{
             state.cart.map((product)=> {
