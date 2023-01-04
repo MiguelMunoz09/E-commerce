@@ -11,6 +11,7 @@
     place-content: center;
     grid-template-columns: repeat(auto-fill,240px);/*autofill, amplia el ancho segun la cantidad de elementos  */
     gap: 2rem;
+    font-family: 'Quicksand', sans-serif;
 }
 
 @media (max-width:640px){

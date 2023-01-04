@@ -3,7 +3,10 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
+  "/SendEmail": "pages/SendEmail.js",
+  "/CreateAccount": "pages/CreateAccount.js",
+  "/Orders": "pages/Orders.js",
+  "/PasswordRecovery": "pages/PasswordRecovery.js",
   "/checkout": "pages/checkout.js",
-  "/MyAccount": "pages/MyAccount.js",
-  "/Orders": "pages/Orders.js"
+  "/Login": "pages/Login.js"
 }
