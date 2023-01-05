@@ -2,11 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/SendEmail": "pages/SendEmail.js",
-  "/CreateAccount": "pages/CreateAccount.js",
-  "/Orders": "pages/Orders.js",
-  "/PasswordRecovery": "pages/PasswordRecovery.js",
-  "/checkout": "pages/checkout.js",
-  "/Login": "pages/Login.js"
+  "/": "pages/index.js"
 }

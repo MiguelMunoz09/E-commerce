@@ -9,7 +9,7 @@ const ProductInfo = ({product}) => {
     
     return (
         <>
-            <figure className={styles["image-container"]}>
+            <figure className={styles["figure-product-image"]}>
                 <Image 
                 className={styles["img-detail-principal"]}
                 src={product.images[0]} 

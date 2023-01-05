@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import AppContext from '../context/AppContext';
 import close from '../asset/icons/icon_close.png';
-import styles from '../styles/OrderItem.module.scss';
+import styles from '../styles/MyOrder.module.scss';
 import Image from "next/image";
 
 const OrderItem = ({ product }) => {
@@ -12,13 +12,13 @@ const OrderItem = ({ product }) => {
 	}
 
 	return (
-		<div className={styles.OrderItem}>
+		<div className={styles["shopping-cart"]}>
 			<figure>
-				<Image src={product?.images[0]} alt={product?.title} width={240} height={240}/>
+				<Image src={product?.images[0]} alt={product?.title} width={100} height={100} className={styles["shopping-image"]} />
 			</figure>
 			<p>{product?.title}</p>
 			<p>${product?.price}</p>
-			<Image src={close} alt="close"  className={styles.closeimage} onClick={() => handleRemove(product)} />
+			<Image src={close} alt="close"  className={styles['close-x']} onClick={() => handleRemove(product)} />
 		</div>
 	);
 }
