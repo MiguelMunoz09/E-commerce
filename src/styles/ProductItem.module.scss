@@ -19,12 +19,14 @@
 .product-info figure {
 	margin: 0;
 }
-.product-info figure img {
+.product-info .figureimg .imgItem {
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
 	
 }
+ 
+
 .product-info div p:nth-child(1) {
 	font-weight: bold;
 	font-size: $--md;

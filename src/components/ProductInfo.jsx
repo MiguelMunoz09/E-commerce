@@ -9,23 +9,24 @@ const ProductInfo = ({product}) => {
     
     return (
         <>
-            <figure className={styles["figure-product-image"]}>
+            <div className={styles["figure-product-image"]}>
                 <Image 
                 className={styles["img-detail-principal"]}
                 src={product.images[0]} 
                 alt={product.title}
-                width={400}
-                height={400}
+                width={240}
+                height={240}
                 priority={true}
                 />
-            </figure>
+                
+            </div>
 
             <div className={styles["ProductInfo-details"]}>
                 <p>${product.price}</p>
                 <p>{product.title}</p>
                 <p>{product.description}</p>
-                <button onClick={()=>addToCart(pro)} className={styles["primary-button-details"] + " " + styles["add-to-cart-button-details"]}>
-                    <Image src={logocart} alt="icono carro de compras" />
+                <button onClick={()=>addToCart(product)} className={styles["primary-button-details"] + " " + styles["add-to-cart-button-details"]}>
+                    <Image src={logocart} alt="icono carro de compras"  className={styles.imageCart}/>
                     <span>Add to cart</span>
                 </button>
             </div>

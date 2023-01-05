@@ -26,16 +26,16 @@ export const ProductItem = ({ product }) => {
   return (
     <div className={styles.ProductItem}>
 
-      <Image
+   <Image
         loader={() => product.images[0]}
         src={product.images[0]}
         alt={product.title}
         width={100}
         height={100}
         onClick={() => setProductDetail(!toggleProductDetail)}
-        
+        className={styles.ItemImages}
       />
-      
+   
       <div className={styles["product-info"]}>
        
         <div>
@@ -44,12 +44,12 @@ export const ProductItem = ({ product }) => {
           
         </div>
          
-        <figure onClick={() => handleClick(product)}>
+        <figure onClick={() => handleClick(product)} className={styles.figureimg}>
           
           {itsProductAdded() ? (
-            <Image src={added_to_cart} alt="" width={250} height={250}/>
+            <Image src={added_to_cart} alt="" width={250} height={250} className={styles.imgItem}/>
           ) : (
-            <Image src={bt_add_to_cart} alt="" width={250} height={250} />
+            <Image src={bt_add_to_cart} alt="" width={250} height={250} className={styles.imgItem}/>
           )}
           {toggleProductDetail && <ProductDetail toggleProductDetail = {toggleProductDetail} setProductDetail = {setProductDetail} product={product} key={product.id}/>}
         </figure>
