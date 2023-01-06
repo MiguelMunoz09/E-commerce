@@ -17,21 +17,26 @@ const Header = () => {
 	const [toggle, setToggle] = useState(false);
 	const [toggleOrders, setToggleOrders] = useState(false);
 	const [toggleMenuMobile, setToggleMenuMobile] = useState(false);
-	const [Hidenavbar, setHideNavbar] = useState (false)
 
+//para esconder el navbar en la Pagina de login
+	const [Hidenavbar, setHideNavbar] = useState (false)
 
 	const { state } = useContext(AppContext);
 	const router = useRouter()
-	const {pathname} = router;
-	console.log("este es el:" + pathname.slice(1,-1)) 
-	var path = pathname.slice(1,-1)
 
+	const {pathname} = router;
+	var path = pathname.slice(1,-1)
+	console.log(path)
+	
 	useEffect(() => {
-		console.log("testing")
-	  if (path == "MyAccoun") {
+		
+	  if (path == "Logi") {
 		setHideNavbar(true)
+		
+	  } else if (path == ""){
+		setHideNavbar(false)
 	  }
-	}, [])
+	}, [path])
 
 	const handleToggle = () => {
 		setToggle(!toggle);

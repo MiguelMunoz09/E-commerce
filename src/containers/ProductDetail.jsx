@@ -8,9 +8,9 @@ const ProductDetail = ({handleDetailToggle, product}) => {
     return (
         
         <aside className={styles["product-detail"]}>
-            {/* <div className={styles["product-detail-close"]} onClick={()=>handleDetailToggle('close')}>
+            <div className={styles["product-detail-close"]} onClick={()=>handleDetailToggle('close')}>
                 <Image src={close_icon} alt="icon close" />
-            </div> */}
+            </div>
 
             <ProductInfo product={product} key={product.id}/>
         </aside>
