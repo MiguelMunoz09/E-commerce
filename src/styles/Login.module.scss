@@ -29,6 +29,13 @@
 	text-decoration: none;
 	margin-bottom: 52px;
 }
+
+.form a:hover {
+	
+	font-size: 14.5px;
+	
+}
+
 .label {
 	font-size: $--sm;
 	font-weight: bold;
@@ -48,7 +55,7 @@
 }
 .primary-button {
 	background-color: black;
-	border-radius: 8px;
+	border-radius: 12px;
 	border: none;
 	color: $--white;
 	width: 100%;
@@ -56,6 +63,11 @@
 	font-size: $--md;
 	font-weight: bold;
 	height: 50px;
+}
+
+.primary-button:hover {
+	background-color: $--hospital-green;
+	
 }
 
 .primary-button a {
@@ -66,7 +78,7 @@
 
 .secondary-button {
 	background-color: $--white;
-	border-radius: 8px;
+	border-radius: 12px;
 	border: 1px solid $--hospital-green;
 	color: $--hospital-green;
 	width: 100%;
@@ -76,10 +88,16 @@
 	height: 50px;
 }
 
+.secondary-button:hover {
+	border: 2px solid ;
+}
+
 .secondary-button a{
 	text-decoration: none;
 	color: $--hospital-green;
 }
+
+
 
 .login-button {
 	margin-top: 14px;

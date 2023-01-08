@@ -25,7 +25,7 @@ const ProductInfo = ({product}) => {
                 <p>${product.price}</p>
                 <p>{product.title}</p>
                 <p>{product.description}</p>
-                <button onClick={()=>addToCart(product)} className={styles["primary-button-details"] + " " + styles["add-to-cart-button-details"]}>
+                <button className={styles["primary-button-details"] + " " + styles["add-to-cart-button-details"]}>
                     {/* <Image src={logocart} alt="icono carro de compras"  className={styles.imageCart}/> */}
                     <span>Add to cart</span>
                 </button>

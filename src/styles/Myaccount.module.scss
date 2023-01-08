@@ -44,7 +44,7 @@
 
   .secondary-button-MyAccount {
     background-color: $--white;
-    border-radius: 8px;
+    border-radius: 12px;
     border: 1px solid $--hospital-green;
     color: $--hospital-green;
     width: 100%;
@@ -52,6 +52,10 @@
     font-size: $--md;
     font-weight: bold;
     height: 50px;
+  }
+
+  .secondary-button-MyAccount:hover{
+    border: 2px solid $--hospital-green;
   }
 
   .login-button-MyAccount {

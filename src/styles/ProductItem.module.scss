@@ -3,6 +3,8 @@
 .ProductItem {
 	width: 240px;
 }
+
+ 
 .ProductItem img {
 	width: 240px;
 	height: 240px;
@@ -10,6 +12,10 @@
 	object-fit: cover;
 	cursor: pointer;
 }
+
+
+
+
 .product-info {
 	display: flex;
 	justify-content: space-between;
@@ -23,7 +29,7 @@
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	
+	transition: all .1s;
 }
  
 

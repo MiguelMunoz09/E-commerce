@@ -4,12 +4,13 @@ import ProductInfo from '../components/ProductInfo';
 import Image from 'next/image';
 import styles from '../styles/ProductDetail.module.scss';
 
-const ProductDetail = ({handleDetailToggle, product}) => {
+const ProductDetail = ({setProductDetail, toggleProductDetail, product}) => {
     return (
         
         <aside className={styles["product-detail"]}>
-            <div className={styles["product-detail-close"]} onClick={()=>handleDetailToggle('close')}>
-                <Image src={close_icon} alt="icon close" />
+            <div className={styles["product-detail-close"]} >
+               
+                <Image src={close_icon} alt="icon close" className={styles.closeIcon} onClick={() => setProductDetail(!toggleProductDetail)}/>
             </div>
 
             <ProductInfo product={product} key={product.id}/>

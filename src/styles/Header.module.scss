@@ -78,7 +78,7 @@
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 640px) {
+@media (max-width: 881px) {
   .menu {
     display: block;
     margin-top: 19px;
@@ -94,6 +94,21 @@
 .nav-logo{
   position: relative;
   text-align: center;
+}
+
+
+}
+
+@media(max-width:1040px) and (min-width:882px){
+  .navbar-left ul li a,
+.navbar-right ul li a {
+  
+  margin-left: 10px;
+  padding: 8px;
+}
+
+.navbar-left ul {
+  margin-left: 100px;
 }
 
 }
