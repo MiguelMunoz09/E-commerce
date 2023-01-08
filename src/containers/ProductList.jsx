@@ -1,7 +1,7 @@
 import React , {useState} from 'react';
 import ProductItem from '../components/ProductItem';
-import ProductDetail from './ProductDetail'
-import useGetProducts from '../Hooks/useGetProducts';
+import ProductDetail from './ProductDetail';
+import useGetProducts from '../hooks/useGetProducts';
 import styles from '../styles/ProductList.module.scss';
 
 const API = 'https://api.escuelajs.co/api/v1/products?limit=50&offset=12'; //Por el momento recibimos la API de esta forma (NO ADECUADA)
