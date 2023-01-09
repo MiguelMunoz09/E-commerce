@@ -67,26 +67,17 @@
 	width:35px;
 }
 
-@media(max-width:640px) {
+@media(max-width:654px) {
 	.figure-product-image{
 		box-sizing: border-box;
 		margin:20px;
 		width: 90%;
-		height: 60%;
+		height: 55%;
 	}
 
 	.primary-button-details {
-		background-color: black;
-		border-radius: 10px;
-		border: none;
-		color: $--white;
-		width: 92%;
-		cursor: pointer;
-		font-size: $--md;
-		font-weight: bold;
-		height: 50px;
+		width: 95%;
 		
-		margin:12px 21px 12px 12px;
 	}
 	
 	

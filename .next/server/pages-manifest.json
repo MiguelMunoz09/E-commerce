@@ -1,9 +1,15 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/PasswordRecovery": "pages/PasswordRecovery.js",
-  "/SendEmail": "pages/SendEmail.js",
-  "/": "pages/index.js",
-  "/Login": "pages/Login.js"
+  "/Orders": "pages/Orders.html",
+  "/_error": "pages/_error.js",
+  "/CreateAccount": "pages/CreateAccount.html",
+  "/api/hello": "pages/api/hello.js",
+  "/PasswordRecovery": "pages/PasswordRecovery.html",
+  "/checkout": "pages/checkout.html",
+  "/": "pages/index.html",
+  "/SendEmail": "pages/SendEmail.html",
+  "/MyAccount": "pages/MyAccount.html",
+  "/Login": "pages/Login.html",
+  "/404": "pages/404.html"
 }
